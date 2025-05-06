@@ -5,7 +5,11 @@ import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestRegressor
 
 # Load the saved Linear Regression model
-model_path = 'drive/MyDrive/Climate Change Analysis in Tanzania Dataset/linear_regression_model.pkl'
+from google.colab import drive  
+drive.mount('/content/drive')  
+
+model_path = '/content/drive/MyDrive/Climate Change Analysis in Tanzania Dataset/linear_regression_model.pkl'  
+linear_model = joblib.load(model_path)
 linear_model = joblib.load(model_path)
 
 # Set Streamlit page configuration
