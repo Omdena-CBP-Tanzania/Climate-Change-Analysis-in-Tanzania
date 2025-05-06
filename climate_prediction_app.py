@@ -5,10 +5,8 @@ import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestRegressor
 
 # Load the saved Linear Regression model
-from google.colab import drive  
-drive.mount('/content/drive')  
 
-model_path = '/content/drive/MyDrive/Climate Change Analysis in Tanzania Dataset/linear_regression_model.pkl'  
+model_path = '/content/linear_regression_model.pkl'  
 linear_model = joblib.load(model_path)
 linear_model = joblib.load(model_path)
 
@@ -36,8 +34,8 @@ elif app_mode == "EDA":
     st.write("Visualizations of historical climate trends in Tanzania.")
 
     # Load example plots (replace with actual plots)
-    st.image("drive/MyDrive/Climate Change Analysis in Tanzania Dataset/predicted_temperatures_plot.png", caption="Predicted Temperatures")
-    st.image("drive/MyDrive/Climate Change Analysis in Tanzania Dataset/feature_importance_rf.png", caption="Feature Importance")
+    st.image("/content/predicted_temperatures_plot.png", caption="Predicted Temperatures")
+    st.image("/content/feature_importance_rf.png", caption="Feature Importance")
 
 # Predict Section
 elif app_mode == "Predict":
