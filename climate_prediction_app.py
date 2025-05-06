@@ -24,7 +24,7 @@ if app_mode == "Home":
     """)
 
     # Add an image or banner
-    st.image("https://images.unsplash.com/photo-1571558826400-ecfcb51a3b94", caption="Climate and Weather Trends", use_container_width=True)
+    st.image("Designer_Climate Prediction.jpeg", caption="Climate and Weather Trends", use_container_width=True)
 
 # EDA Section
 elif app_mode == "EDA":
